@@ -139,8 +139,22 @@ blockquote {
     text-align: right;
 }
 
+/* Progress bar */
 .progress-bar-custom {
     background-color: #81C7C7;
+}
+
+/* Label */
+.label-primary {
+  background-color: #B5A3E0;
+}
+
+.label-success {
+  background-color: #B6EE69;
+}
+
+.label-warning {
+  background-color: #FFD968;
 }
 
 footer p,
