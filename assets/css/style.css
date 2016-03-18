@@ -29,31 +29,31 @@ h1 {
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #000;
+    color: #431301;
     margin: 0;
 }
 
 h2 {
     font-size: 1.3em;
-    background: #fcfcfc;
+    background: #FFF3EE;
     padding: 10px;
 }
 
 h3 {
     font-size: 1.4em;
     text-transform: uppercase;
-    color: #000;
+    color: #6A2B14;
     margin-top: 0;
 }
 
 h4 {
     margin: 15px 0 0;
     margin-bottom: 10px;
-    color: #E09354;
+    color: #117BB9;
 }
 
 a {
-  color: #FFBB83;
+  color: #54A9DC;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -61,8 +61,8 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #E69858;
-  color: #E69858;
+  color: #117AB8;
+  color: #117AB8;
 }
 a:focus {
   text-decoration: none;
@@ -102,7 +102,7 @@ li {
 
 .secicon.fa {
     font-size: 28px;
-    color: #EAD0BA;    
+    color: #8F492F;    
     margin-right: 10px;
 }
 
@@ -139,9 +139,26 @@ blockquote {
     text-align: right;
 }
 
+.sidebar {
+  padding: 24px;
+  border-radius: 3px;
+  border: 2px solid #7BC0E9;
+  background-color: #F6FAFC;
+}
+
 /* Progress bar */
 .progress-bar-custom {
-    background-color: #81C7C7;
+    background-color: #3393CC;
+}
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.progress-bar-custom > svg {
+    height: 100%;
+    display: block;
 }
 
 /* Label */
