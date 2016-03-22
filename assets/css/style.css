@@ -29,20 +29,20 @@ h1 {
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #431301;
+    color: #000;
     margin: 0;
 }
 
 h2 {
     font-size: 1.3em;
-    background: #FFF3EE;
+    background: #F6FAFD;
     padding: 10px;
 }
 
 h3 {
     font-size: 1.4em;
     text-transform: uppercase;
-    color: #6A2B14;
+    color: #7F939E;
     margin-top: 0;
 }
 
@@ -53,7 +53,7 @@ h4 {
 }
 
 a {
-  color: #54A9DC;
+  color: #1abc9c;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -61,8 +61,8 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #117AB8;
-  color: #117AB8;
+  color: #007E65;
+  color: #007E65;
 }
 a:focus {
   text-decoration: none;
@@ -102,7 +102,7 @@ li {
 
 .secicon.fa {
     font-size: 28px;
-    color: #8F492F;    
+    color: #5A7687;    
     margin-right: 10px;
 }
 
