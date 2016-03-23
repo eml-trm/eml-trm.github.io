@@ -198,6 +198,9 @@ blockquote {
 }
 /*==================*/
 
+.line {
+    margin: 40px 0;
+}
 
 footer p,
 footer a {
