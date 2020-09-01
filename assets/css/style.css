@@ -58,7 +58,7 @@ h4 {
 }
 
 a {
-  color: #00BEBE;
+  color: #117BB9;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -107,11 +107,12 @@ li {
 
 .secicon.fa {
     font-size: 28px;
-    color: #5A7687;    
+    color: #5A7687;
     margin-right: 10px;
 }
 
 .sub {
+    color: #00BEBE;
     margin-bottom: 15px;
 }
 
