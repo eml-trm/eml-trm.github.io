@@ -1,11 +1,8 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -18,7 +15,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -27,18 +23,16 @@ jobs:
 
       - name: Detect package manager
         id: detect-package-manager
-        working-directory: ./website # Spécifie le dossier
+        working-directory: ./website # Chemin vers le sous-dossier
         run: |
-          if [ -f "${{ github.workspace }}/website/yarn.lock" ]; then
+          if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/website/package.json" ]; then
+          elif [ -f "package-lock.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
           else
             echo "Unable to determine package manager"
             exit 1
@@ -55,29 +49,19 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            website/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('website/**/package-lock.json', 'website/**/yarn.lock') }}-${{ hashFiles('website/**/*.[jt]s', 'website/**/*.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('website/**/package-lock.json', 'website/**/yarn.lock') }}-
-
       - name: Install dependencies
-        working-directory: ./website # Spécifie le dossier
+        working-directory: ./website # Chemin vers le sous-dossier
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
-        working-directory: ./website # Spécifie le dossier
+        working-directory: ./website # Chemin vers le sous-dossier
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./website/out # Spécifie le dossier de sortie
+          path: ./website/out # Chemin vers le dossier de sortie
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
