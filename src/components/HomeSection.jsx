@@ -11,7 +11,7 @@ const HomeSection = () => {
             À vos côtés pour vos besoins numériques
           </h1>
           <p className="text-lg text-white mb-12 text-center leading-relaxed">
-            Obtenez de l'aide avec vos appareils en <strong>toute simplicité</strong>, 
+            Obtenez de l’aide avec vos appareils en <strong>toute simplicité</strong>, 
             directement chez vous avec <strong>mon aide</strong>.
           </p>
         </div>

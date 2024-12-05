@@ -32,9 +32,9 @@ const Footer = () => {
 
           {/* Colonne 3 : Zone d'intervention */}
           <div>
-            <h3 className="text-lg font-semibold mb-3">Zone d'intervention</h3>
+            <h3 className="text-lg font-semibold mb-3">Zone d’intervention</h3>
             <p className="max-w-xs">
-              J'intervention dans un rayon de 25 km autour de Tillières-sur-Avre.
+              J’intervention dans un rayon de 25 km autour de Tillières-sur-Avre.
             </p>
           </div>
         </div>

@@ -19,7 +19,7 @@ const AboutSection = () => {
           <div className="w-full md:w-1/2 md:ml-8">
             <h3 className="text-2xl md:text-3xl font-bold text-[#F4E0C6] mb-6">Qui suis-je ?</h3>
             <p className="text-base text-white mb-6 leading-relaxed">
-              Je m'appelle Emeline, je suis <strong>développeuse informatique</strong> depuis plus de 6 ans et animée par l'envie de rendre la <strong>technologie accessible à tous</strong>. 
+              Je m’appelle Emeline, je suis <strong>développeuse informatique</strong> depuis plus de 6 ans et animée par l’envie de rendre la <strong>technologie accessible à tous</strong>. 
               Mon approche est bienveillante, patiente et adaptée à vos besoins, pour vous aider à utiliser vos outils numériques
               <strong> en toute confiance</strong>, directement chez vous.
             </p>
