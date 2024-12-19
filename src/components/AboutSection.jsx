@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import profilImg from '../../public/Emeline_Merliere.jpg'
-
 
 const AboutSection = () => {
   return (
@@ -9,7 +7,7 @@ const AboutSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
             <Image
-              src={profilImg}
+              src="/Emeline_Merliere.jpg"
               alt="Emeline"
               width={400}
               height={400}
