@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={inter.className}>
+      <script data-goatcounter="https://emeline-merliere.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
         <Header />
         <main className="pt-20">
           {children}
