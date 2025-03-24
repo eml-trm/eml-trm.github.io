@@ -26,7 +26,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-3">Suivez-moi</h3>
             <div className="flex items-center">
                 <Facebook size={20} className="mr-2" />
-                <span>Facebook (à venir)</span>
+                <a href="https://www.facebook.com/profile.php?id=61574066081710" className="hover:underline">
+                Facebook
+                </a>
             </div>
           </div>
 
@@ -34,7 +36,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-3">Zone d’intervention</h3>
             <p className="max-w-xs">
-              J’intervention dans un rayon de 25 km autour de Tillières-sur-Avre.
+              J’intervention dans un rayon de 30 km autour de Tillières-sur-Avre.
             </p>
           </div>
         </div>
